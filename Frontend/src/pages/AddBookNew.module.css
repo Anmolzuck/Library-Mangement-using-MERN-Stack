@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modalBox {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalBox .modalContent {
+  position: relative;
+  height: 317px;
+  width: 699px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.modalContent .header {
+  height: 15%;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid grey;
+}
+
+.header h1 {
+  font-size: 22px;
+  padding: 10px;
+}
+
+.header .closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.closeBtn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.modalContent form {
+  height: 85%;
+  width: 100%;
+  display: flex;
+}
+
+form .inputField {
+  width: 50%;
+  width: inherit;
+  padding: 20px;
+}
+
+.inputField label {
+  font-size: 14px;
+}
+
+form input {
+  height: 36px;
+  width: 298px;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #2975cc;
+  border-radius: 4px;
+  outline: none;
+}
+
+form .field2 {
+  position: relative;
+}
+
+.field2 .cancelBtn {
+  width: 78px;
+  height: 36px;
+  border: none;
+  background-color: #76787a;
+  border-radius: 4px;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+}
+
+.cancelBtn:hover {
+  background-color: rgba(118, 120, 122, 0.9);
+  cursor: pointer;
+}
+
+.field2 .addBook {
+  width: 98px;
+  height: 36px;
+  background-color: #2975cc;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  position: absolute;
+  right: 4%;
+  bottom: 10%;
+}
+
+.addBook:hover {
+  background-color: rgba(41, 117, 204, 0.9);
+  cursor: pointer;
+}
